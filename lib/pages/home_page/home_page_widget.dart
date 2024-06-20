@@ -81,7 +81,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     await authManager.signOut();
                     GoRouter.of(context).clearRedirectLocation();
 
-                    context.goNamedAuth('Login', context.mounted);
+                    context.goNamedAuth('VendorLogin', context.mounted);
                   },
                   text: 'Log Out',
                   options: FFButtonOptions(
