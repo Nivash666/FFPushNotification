@@ -766,6 +766,8 @@ class _VendorLoginWidgetState extends State<VendorLoginWidget> {
                                         });
                                         await actions.onesignal(
                                           _model.action!.externalId!,
+                                          _model.action!.shopId!,
+                                          _model.action!.subCategoryId!,
                                         );
 
                                         context.goNamedAuth(
